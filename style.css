@@ -1,0 +1,229 @@
+/* cores do site:
+   rosa = #b03a5b
+   vinho = #7a2840
+   rosa claro = #f0c2cf
+   fundo = #fff5f7
+*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff5f7;
+  color: #444444;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: #7a2840;
+}
+
+/* deixa o conteudo centralizado no meio da tela */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== MENU ===== */
+header {
+  background-color: #7a2840;
+  padding: 15px 0;
+}
+
+.logo {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.logo span {
+  font-size: 13px;
+  color: #f0c2cf;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+/* ===== BANNER ===== */
+.banner {
+  background-color: #b03a5b;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 44px;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 15px auto 25px auto;
+}
+
+/* ===== BOTOES ===== */
+.botao {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin: 5px;
+}
+
+.verde {
+  background-color: #25a35a;
+}
+
+.rosa {
+  background-color: #b03a5b;
+}
+
+/* ===== SECOES ===== */
+section {
+  padding: 50px 0;
+}
+
+.branco {
+  background-color: white;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 34px;
+  margin-top: 0;
+}
+
+.centro {
+  text-align: center;
+}
+
+/* ===== GRADE DAS CAIXAS ===== */
+/* faz as caixas se ajustarem sozinhas conforme o tamanho da tela */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-top: 4px solid #b03a5b;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.aviso {
+  margin-top: 30px;
+  background-color: #f0c2cf;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== FOTOS DOS TRABALHOS ===== */
+.trabalho {
+  height: 300px;
+  background-color: #f0c2cf;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.trabalho p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  background-color: #7a2840;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0 0 10px 10px;
+}
+
+/* ===== DEPOIMENTOS ===== */
+.depoimento {
+  background-color: #fff5f7;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.estrelas {
+  color: #e0a83a;
+}
+
+/* ===== EQUIPE ===== */
+.foto-gabi {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ===== CONTATO ===== */
+.contato {
+  background-color: #7a2840;
+  color: white;
+  text-align: center;
+}
+
+.contato h2 {
+  color: white;
+}
+
+/* ===== RODAPE ===== */
+footer {
+  background-color: #5a1d2f;
+  color: #f0c2cf;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+}
+
+/* ===== BOTAO FIXO DO WHATSAPP ===== */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25a35a;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== CELULAR (telas pequenas) ===== */
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 32px;
+  }
+
+  .titulo {
+    font-size: 28px;
+  }
+}
